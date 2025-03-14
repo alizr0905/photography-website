@@ -1,0 +1,40 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography Portfolio</title>
+    <!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+    </nav>
+
+    <section class="hero">
+        <div>
+            <h1>MISS NA KITA</h1>
+            <p>hindi lang oras oras kang nasa isip, minuto, segundo. tumambay ka na eh</p>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <img src="{{ url_for('static', filename='images/photo1.jpg') }}" alt="Photography 1">
+        <img src="{{ url_for('static', filename='images/photo2.jpg') }}" alt="Photography 2">
+        <img src="{{ url_for('static', filename='images/photo3.jpg') }}" alt="Photography 3">
+        <img src="{{ url_for('static', filename='images/photo4.jpg') }}" alt="Photography 4">
+    </section>
+
+    <footer>
+        &copy; 2025 Your Name | Professional Photography
+    </footer>
+
+</body>
+</html>
+
